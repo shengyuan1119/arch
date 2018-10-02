@@ -2,7 +2,7 @@ var myLatLng = {lat:25.047923,lng:121.516954};
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myLatLng,
-  scrollwheel: false,
+  scrollwheel: true,
   gestureHandling: 'greedy',
       });
 function initialize(){
@@ -10,7 +10,7 @@ function initialize(){
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myLatLng,
-  scrollwheel: false,
+  scrollwheel: true,
   gestureHandling: 'greedy',
       });
 }
