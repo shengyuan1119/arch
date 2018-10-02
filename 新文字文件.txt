@@ -1,0 +1,15 @@
+https://github.com/shengyuan1119/arch.git
+
+
+cd c/ccc/git
+ls
+git clone https://github.com/shengyuan1119/arch.git
+git check
+cd arch
+git checkout --orphan gh-pages
+git add -A
+git commit -a -m "commit1"
+git config --global user.email "chenshengyuan1119@gmail.com"
+git config --global user.name "chenshengyuan1119"
+git commit -a -m "commit1"
+git push origin gh-pages
