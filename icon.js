@@ -2,16 +2,15 @@ var myLatLng = {lat:25.047923,lng:121.516954};
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myLatLng,
-  scrollwheel: true,
-  gestureHandling: 'greedy',
+        gestureHandling: 'greedy',
       });
 function initialize(){
   var myLatLng = {lat:25.047923,lng:121.516954};
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
         center: myLatLng,
-  scrollwheel: true,
-  gestureHandling: 'greedy',
+  //scrollwheel:false,
+  gestureHandling:'greedy',
       });
 }
 
