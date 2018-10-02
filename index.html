@@ -39,25 +39,26 @@
                  value="1916臺北市街平面圖" />
           <input id="ma8" type="button" onclick="toggle8(value)"
                  value="1919臺北市街全圖" />
-                 <div style="display:inline;">
+                
 
            
               <td colspan="5">
-                Opacity: <div style="display: inline;"><span class="c" style="width:35px;font-size:18px;font-weight:bold;display:inline;" id="opacityValue"></span>
-</div>
+                Opacity: <span class="c" style="width:35px;font-size:18px;font-weight:bold;display:inline;" id="opacityValue"></span>
+
               </td>
-            </div>
-            <div style="display:inline;">
+        
+
+              <table class="c">
               <td colspan="5">
-                <input class = "c" type="range"
+                <input type="range"
                        min="1"
                        max="100"
                        value="100"
                        oninput="changeOpacity(this);"
                        onchange="changeOpacity(this);">
               </td>
-           
-          </div>
+           </table>
+  
         </div>
         </div>
       </div>
