@@ -3,6 +3,7 @@
 body {
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 16px;
+  background:pink;
 }
 
 .map {
@@ -22,7 +23,7 @@ h5 {
 }
 
 input {
-  margin: 0 0 0 0px;
+  margin: 0px 1px 0px 0px;
 }
 
 legend {
