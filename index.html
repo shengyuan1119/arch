@@ -12,7 +12,7 @@
     <link href=" ol3gm.css" rel="stylesheet">
     <link rel="stylesheet" href="layout.css" />
   </head>
-  <body>
+  <body bgcolor='orange'>
 
     <div class="container-fluid">
       <div class="row-fluid">
@@ -39,7 +39,22 @@
                  value="1916臺北市街平面圖" />
           <input id="ma8" type="button" onclick="toggle8(value)"
                  value="1919臺北市街全圖" />
+<table>
+           
+              <td colspan="5">
+                Opacity: <span style="width:35px;float:right;font-size:18px;font-weight:bold;" id="opacityValue"></span>
 
+              </td>
+              <td colspan="5">
+                <input type="range"
+                       min="1"
+                       max="100"
+                       value="100"
+                       oninput="changeOpacity(this);"
+                       onchange="changeOpacity(this);">
+              </td>
+            
+          </table>
         </div>
       </div>
     </div>
