@@ -1,0 +1,49 @@
+
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, all" />
+    <title>wmts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    
+   <link href="ol.css" rel="stylesheet">
+    <link href=" ol3gm.css" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12">
+          <h4>Icon example</h4>
+          <p>
+            Demonstrates the support of icon vector style by OL3-Google-Maps.
+          </p>
+
+          <input id="toggle" type="button" onclick="toggle();"
+                 value="Toggle Between OL3 and GMAPS" />
+
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- When loading Google Maps on your own server, replace the src with
+         https://maps.googleapis.com/maps/api/js?v=3&key=mykey
+         where mykey is your Google Maps API key -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTijFne2Kt79m_ixNK9bq28NbOZ041oH4">
+    </script> 
+<script type= "text/javascript" src="ol3gm.js" ></script>
+<script type= "text/javascript" src="icon.js" ></script>
+   
+  </body>
+</html>
