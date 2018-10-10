@@ -10,9 +10,9 @@ body {
 }
 
 .map {
-  height: 765px;
+  height: 865px;
   width: 100%;
-  margin: 10px 0px 0 0;
+  margin: 10px 0px;
 }
 
 .docs {
@@ -26,8 +26,8 @@ h5 {
 }
 
 input {
-/*按鈕上方與map間距-按鈕右邊間的空隙-按鈕下方-按鈕左邊間的空隙*/
-  margin: 0px 0 0 0;
+/*按鈕上方與map間距-按鈕right間的空隙-按鈕下方-*/
+  margin: 0 100px 0px 0px;
 }
 
 legend {
