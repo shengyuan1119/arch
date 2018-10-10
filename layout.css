@@ -27,7 +27,7 @@ h5 {
 
 input {
 /*按鈕上方與map間距-按鈕right間的空隙-按鈕下方-*/
-  margin: 0 100px 0px 0px;
+  margin: 0 0px 0px 0px;
 }
 
 legend {
