@@ -1,13 +1,17 @@
 var myLatLng = {lat:25.047923,lng:121.516954};
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
+        zoom: 15,
+        maxZoom: 20,
+        minZoom: 13,
         center: myLatLng,
         //gestureHandling: 'greedy',
       });
 function initialize(){
   var myLatLng = {lat:25.047923,lng:121.516954};
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
+    zoom: 15,
+    maxZoom: 20,
+    minZoom: 13,
         center: myLatLng,
   //scrollwheel:false,
   //gestureHandling:'greedy',
@@ -21,8 +25,8 @@ function toggle(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
   initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+    //maxZoom: 11,
+   // minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -42,8 +46,8 @@ function toggle2(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+   // maxZoom: 11,
+    //minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -62,8 +66,8 @@ function toggle3(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+   // maxZoom: 15,
+   // minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -81,8 +85,8 @@ function toggle4(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+   // maxZoom: 15,
+   // minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -101,8 +105,8 @@ function toggle5(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+   // maxZoom: 15,
+   // minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -121,8 +125,8 @@ function toggle6(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+    //maxZoom: 15,
+    //minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -141,8 +145,8 @@ function toggle7(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+    //maxZoom: 15,
+   // minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -161,8 +165,8 @@ function toggle8(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+   // maxZoom: 15,
+   // minZoom: 10,
     name: "EMAP",
     // 每個磚格設定為 256 X 256
     tileSize: new google.maps.Size(256, 256),
@@ -182,8 +186,8 @@ function toggle9(value) {
   //osmLayer.setVisible(!osmLayer.getVisible());
 initialize();
 const wmsMapType = new google.maps.ImageMapType({
-    maxZoom: 18,
-    minZoom: 7,
+   // maxZoom: 15,
+   // minZoom: 10,
     name: "EMAP",
 
             // 每個磚格設定為 256 X 256
@@ -199,9 +203,13 @@ const wmsMapType = new google.maps.ImageMapType({
 };
 
 function changeOpacity(element) {
-  var value = element.value / 100;
-  var valueElement = document.getElementById('opacityValue');
-  opacityValue.innerHTML = value;
+  var value = element.value /100;
+ // var valueElement = document.getElementById('opacityValue');
+  opacityValue.innerHTML = Math.floor(100-value*100)/1;
+  //document.write(value.toFixed(3));
+  //value = value * 100;
+ // value.toFixed(5);
+  //opacityValue.innerHTML = Math.floor(value*1)/1;
 
   map.overlayMapTypes.getAt(0).setOpacity(value);
 }
